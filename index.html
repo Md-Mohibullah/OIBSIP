@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Md Mohibullah claculator</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+    <body>
+        <h1 > Md Mohibullah'S calculator</h1>
+        <div class="calculator">
+            <div class="screen" id="screen">
+                <div style="height:30%; margin-top:0px; padding:6px;font-size: 15px;"><p id="screen_output"></p></div>
+                <div style="height:50% ;margin-top:-25px;padding:6px;font-size:30px;"><p id="input"></p></div>
+            </div>
+            <div class="numbers">
+                    <div>
+                        <button onclick='numbers( "(" )' value="(">(</button>
+                        <button onclick='numbers( ")" )' value=")">)</button>
+                        <button onclick="ans()" value="ans">ans</button>
+                        <button onclick="del()" value="del">del</button>
+                        <button onclick="clear1()" value="clear">clear</button>
+                    </div>
+                        
+                    <div>
+                        <button id="button" onclick="numbers(7)" vlaue="7" >7</button>
+                        <button id="button" onclick="numbers(8)" value="8" onclick="">8</button>
+                        <button onclick="numbers(9)" value="9">9</button>
+                        <button onclick="numbers('%')" value="%">%</button>
+                        <button onclick="numbers('sqrt')" value="sqrt">sqrt</button>
+                    </div>
+                    <div>
+                        <button onclick="numbers(4)" value="4">4</button>
+                        <button onclick="numbers(5)" value="5">5</button>
+                        <button onclick="numbers(6)" value="6">6</button>
+                        <button onclick="numbers('*')" value="*">x</button>
+                        <button onclick="numbers('/')" value="/">/</button>
+                    </div>
+                        
+                    <div>
+                        <button onclick="numbers(1)" value="1">1</button>
+                        <button onclick="numbers(2)" value="2">2</button>
+                        <button onclick="numbers(3)" value="3">3</button>
+                        <button  onclick="numbers('+')" value="+">+</button>
+                        <button onclick="numbers('-')" value="-">-</button>
+                    </div>
+                        
+                    <div>
+                        <button onclick="numbers('.')" value=".">.</button>
+                        <button onclick="numbers('0')" value="0">0</button>
+                        <button>+-</button>
+                        <button id="ENTER" style="width: 130px;" value="ENTER" type="submit" onclick="sum()">=</button>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
